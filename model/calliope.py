@@ -1,8 +1,8 @@
-from ..battery.spindler import SpindlerBattery
-from ..engine.capulet import CapuletEngine
-from ..model_base import Model
+from .battery.spindler import SpindlerBattery
+from .engine.capulet import CapuletEngine
+from .model_base import Model
 
-class CalliopeModel:
+class Calliope:
     def __init__(self, milage, last_service_date, warning_light_is_on):
         self.model = Model(SpindlerBattery(last_service_date), CapuletEngine(milage, warning_light_is_on))
 
@@ -11,4 +11,5 @@ class CalliopeModel:
 
 # from datetime import datetime
 #
-# model = CalliopeModel(10, datetime.now(), True)
+# model = calliopemodel(10, datetime.now(), true)
+# print(model.require_service())

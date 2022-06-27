@@ -1,8 +1,8 @@
-from ..battery.spindler import SpindlerBattery
-from ..engine.sternman import SternmanEngine
-from ..model_base import Model
+from .battery.spindler import SpindlerBattery
+from .engine.sternman import SternmanEngine
+from .model_base import Model
 
-class CalliopeModel:
+class Palindrome:
     def __init__(self, milage, last_service_date, warning_light_is_on):
         self.model = Model(SpindlerBattery(last_service_date), SternmanEngine(milage, warning_light_is_on))
 

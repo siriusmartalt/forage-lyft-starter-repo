@@ -1,8 +1,8 @@
-from ..battery.nubbing import NubbinBattery
-from ..engine.willoughby import WilloughbyEngine
-from ..model_base import Model
+from .battery.nubbin import NubbinBattery
+from .engine.willoughby import WilloughbyEngine
+from .model_base import Model
 
-class CalliopeModel:
+class Rorschach:
     def __init__(self, milage, last_service_date, warning_light_is_on):
         self.model = Model(NubbinBattery(last_service_date), WilloughbyEngine(milage, warning_light_is_on))
 

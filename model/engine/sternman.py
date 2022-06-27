@@ -1,4 +1,4 @@
-from ..engine_base import EngineBase
+from .engine_base import EngineBase
 
 class SternmanEngine:
     def __init__(self, milage, warning_light_is_on):

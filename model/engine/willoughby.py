@@ -1,6 +1,6 @@
-from ..engine_base import EngineBase
+from .engine_base import EngineBase
 
-class SternmanEngine:
+class WilloughbyEngine:
     def __init__(self, milage, warning_light_is_on):
         self.engine = EngineBase(60000, False, milage, warning_light_is_on)
 
