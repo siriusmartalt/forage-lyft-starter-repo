@@ -6,4 +6,4 @@ class EngineBase:
         self.milage = milage
 
     def require_service(self):
-        return ((self.mileage_limit != -1) and (self.mileage_limit <= self.milage)) or (self.service_when_warning and self.warning_light_is_on)
+        return ((self.mileage_limit != -1) and (self.mileage_limit < self.milage)) or (self.service_when_warning and self.warning_light_is_on)

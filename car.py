@@ -1,11 +1,10 @@
 class Car:
-    def __init__(self, model):
+    def __init__(self, model, tires):
         self.model = model
+        self.tires = tires
 
-    def require_service(self):
-        return self.model.require_service()
+    def needs_service(self):
+        return self.model.needs_service() or tires.needs_service()
 
-# from datetime import datetime
 # model = CalliopeModel(10, datetime.now(), False)
 # car = Car(model)
-# print(car.require_service())

@@ -4,4 +4,4 @@ class Model:
         self.engine = engine
 
     def require_service(self):
-        return self.battery.require_service() and self.engine.require_service()
+        return self.battery.require_service() or self.engine.require_service()
